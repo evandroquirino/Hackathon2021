@@ -39,7 +39,7 @@
          <?php
      
       	//sql para selecionar as categorias
-      	$sql = "select * from veiculo where tipo order by tipo";
+      	$sql = "select * from veiculo order by tipo";
       	//executar este sql
       	$result = mysqli_query($con, $sql);
       	//recuperar os dados por linha
