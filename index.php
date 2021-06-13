@@ -36,10 +36,10 @@
 
   <div class="collapse navbar-collapse" id="menu">
     <ul class="navbar-nav mr-auto">
-         <?php
-     
+      </li>
+       <?php
       	//sql para selecionar as categorias
-      	$sql = "select * from veiculo order by tipo";
+      	$sql = "select * from tipo order by tipo limit 2";
       	//executar este sql
       	$result = mysqli_query($con, $sql);
       	//recuperar os dados por linha
@@ -50,19 +50,45 @@
       		$tipo = $dados["tipo"];
       		//echo "<p>{$id} {$categoria}</p>";
       		echo "<li class=\"nav-item\">
-		        <a class=\"nav-link\" href=\"index.php?pagina=categoria&id={$id}\">
+		        <a class=\"nav-link\" href=\"index.php?pagina=tipo&id={$id}\">
 		        	{$tipo}
-		    	  </a>
-		        </li>";
+		    	</a>
+		      </li>";
+
       	}
-        
-      ?>
-      
-    </ul>
-  </div>
+        ?>
+        <li class="nav-item">
+        <a class="nav-link" href="index.php?pagina=sobre">
+        	Sobre a Empresa
+    	</a>
+      </li>
 </nav> 
 
 <!-- banner carrousel --> 
+
+<!-- -->
+
+
+
+<main class="container">
+	<?php
+		//recebe o valor da pagina (GET)
+		$pagina = $_GET["pagina"] ?? "index.php";
+
+		//$paginas = home -> paginas/home.php
+		$pagina = "paginas/{$pagina}.php";
+
+		//verificar se a página
+		if ( file_exists($pagina) ) {
+			//incluir a minha página
+			include $pagina;
+		} else {
+			
+		}
+	?>
+</main>
+
+
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -84,29 +110,6 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-<!-- -->
-
-
-
-<main class="container">
-	<?php
-		//recebe o valor da pagina (GET)
-		$pagina = $_GET["pagina"] ?? "index.php";
-
-		//$paginas = home -> paginas/home.php
-		$pagina = "paginas/{$pagina}.php";
-
-		//verificar se a página
-		if ( file_exists($pagina) ) {
-			//incluir a minha página
-			include $pagina;
-		} else {
-			
-		}
-
-
-	?>
-</main>
 
 <footer class="bg-primary">
   <div class="container">
