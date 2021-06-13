@@ -21,14 +21,17 @@
 		while ( $dados = mysqli_fetch_array( $result ) ) {
 			//separar
 			$id = $dados["id"];
+
 			$modelo = $dados["modelo"];
-			$fotoDestaque = $dados["fotoDestaque"];
+			$fotodestaque = $dados["fotodestaque"];
 			$valor = $dados["valor"];
+			$valor = "R$ " . number_format($valor, 2, ",", ".");
 
 
 			echo "<div class='col-12 col-md-4 text-center'>
-				<img src='images/{$fotoDestaque}.png' alt='{$fotoDestaque}' class='w-100'>
+				<img src='images/{$fotodestaque}.png' alt='{$fotodestaque}' class='w-100'>
 				<h2>{$modelo}</h2>
+				<h2>{$valor}</h2>
 				<p>
 					<a href='index.php?pagina=produto&id={$id}' class='btn btn-success btn-lg w-100'>
 					Detalhes
