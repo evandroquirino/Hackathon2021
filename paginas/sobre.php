@@ -10,6 +10,6 @@ cores e faixas de preço; nacionais e importados; automóveis e caminhonetes, no
 
 Integridade, honestidade e profissionalismo são as premissas que sempre nortearam as atividades da nossa empresa.
 
-Hoje, fruto de muitos anos de trabalho correto com qualidade e dedicação, a Extreme Veículos conquistou seu mais caro e inegociável "patrimônio", seus  clientes e amigos, que com a empresa já negociaram.
+Hoje, fruto de muitos anos de trabalho correto com qualidade e dedicação, a Extreme Veículos conquistou seu mais caro e inegociável "patrimônio", seus  clientes e amigos, que com a empresa já negociaram.</br>
 
 Há anos no mercado a Extreme Veículos vem conquistando ainda mais a confiança do público de umuarama e região, com um excelente e personalizado atendimento, e garantias de ótimo negócio, excelência e qualidade você só encontra aqui. Venha nos fazer uma visita.
